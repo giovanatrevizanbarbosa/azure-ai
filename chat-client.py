@@ -9,7 +9,7 @@ try:
     model_name = "gpt-5-mini"
     deployment = "gpt-5-mini"
 
-    subscription_key = os.environ.get("SUBSCRIPTION_KEY")
+    subscription_key = os.environ.get("AZURE_OPENAI_KEY")
     api_version = "2025-04-01-preview"
 
     client = AzureOpenAI(
